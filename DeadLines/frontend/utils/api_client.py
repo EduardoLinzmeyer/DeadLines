@@ -250,7 +250,3 @@ class APIClient:
 
 """Local para desenvolvimento"""
 api_client = APIClient()
-
-
-"""Local para produção"""
-#api_client = APIClient("https://agendamentos-fqfbcedgbpahh8gd.brazilsouth-01.azurewebsites.net")
