@@ -175,12 +175,3 @@ if __name__ == "__main__":
     uvicorn.run(app,
                 host="0.0.0.0",
                 port=8000)
-
-"""Executar separadamente em ambiente de Desenvolvimento"""
-"""
-    Para backend: 
-    uvicorn backend.main:app --reload na pasta raiz DeadLines
-    
-    Para frontend: 
-    python main.py
-"""
