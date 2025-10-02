@@ -3,7 +3,7 @@ import flet as ft
 from utils.api_client import APIClient, api_client
 
 
-class TelaAgendamentosServicos(ft.Row):  # Mudamos para Row para dividir horizontalmente
+class TelaAgendamentosServicos(ft.Row):  # Row para dividir horizontalmente
     def __init__(self, page: ft.Page):
         super().__init__()
         self.page = page
@@ -308,3 +308,4 @@ class TelaAgendamentosServicos(ft.Row):  # Mudamos para Row para dividir horizon
         self.servico_editando = None
         self.area_edicao.visible = False
         self.page.update()
+
