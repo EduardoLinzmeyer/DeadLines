@@ -1,0 +1,35 @@
+DeadLines
+    │
+    ├── backend/                                    # BackEnd FastAPI
+    │       ├── api/                                # Pasta para routers
+    │       │       ├── __init__.py                 # Tornar pacotes Python
+    │       │       └── users.py
+    │       ├── assets/
+    │       │
+    │       ├── .env                                # Configurações do Servidor SQL
+    │       ├── __init__.py                         # Tornar pacotes Python
+    │       ├── auth.py                             # Token de autenticação
+    │       ├── database.py                         # Conexão com o SQL Server
+    │       ├── main.py                             # Aplicação do FastAPI
+    │       └── requirements.txt                    # Dependências do backend
+    │
+    └── frontend/                                   # FrontEnd Flet
+            ├── main.py                             # Entrada principal
+            ├── requirements.txt                    # Dependências do frontend
+            │
+            ├── telas/
+            │       ├── __init__.py                 # Tornar pacotes Python
+            │       ├── agendamentos.py             # Tela principal de submenu de agendamentos
+            │       ├── agendamentos_calendario.py  # Submenu de agendamentos.py contendo os agendamentos mensais
+            │       ├── agendamentos_clientes.py    # Submenu de agendamentos.py contendo a listagem e o cadastro dos clientes
+            │       ├── agendamentos_home.py        # Submenu de agendamentos.py da tela inicial dos agendamentos
+            │       ├── agendamentos_servicos.py    # Submenu de agendamentos.py contendo a listagem e o cadastro dos serviços
+            │       ├── configs.py                  # Tela principal de submenu de Configurações
+            │       ├── configs_gerais.py           # Submenu de configs.py contendo as configurações gerais (tema, etc)
+            │       ├── controle_usuarios.py        # Submenu de configs.py contendo o controle de usuários (criar/editar/excluir)
+            │       ├── login.py                    # Login de usuários
+            │       ├── menu.py                     # Menu principal
+            │       └── splash.py                   # Inicialização animada
+            │
+            └── utils/
+                    └── api_client.py               # Cliente p/ comunicação com API
