@@ -185,9 +185,3 @@ if __name__ == "__main__":
         assets_dir="assets",
         web_renderer="canvaskit"
     )
-
-"""Executar separadamente em ambiente de Desenvolvimento"""
-"""
-    Para backend: uvicorn main:app --reload --host 0.0.0.0 --port 8000
-    Para frontend: python main.py
-"""
