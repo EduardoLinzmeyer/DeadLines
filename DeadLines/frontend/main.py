@@ -9,6 +9,8 @@ from telas.login import TelaLogin
 from telas.splash import TelaSplash
 from telas.menu import MainMenu
 from telas.agendamentos import TelaAgendamentos
+from telas.listas import TelaListas
+from telas.relatorios import TelaRelatorios
 from telas.configs import TelaConfig
 from utils.api_client import api_client
 
@@ -121,6 +123,33 @@ async def alt_rotas(e):
                 bgcolor=ft.Colors.SURFACE
             )
             page.views.append(agendamentos_view)
+
+
+
+        elif page.route == "/listas":
+            if not page.session.get("user"):
+                page.go("/login")
+                return
+
+            listas_view = ft.View(
+                "/listas",
+                [TelaListas(page)],
+                bgcolor=ft.Colors.SURFACE
+            )
+            page.views.append(listas_view)
+
+
+        elif page.route == "/relatorios":
+            if not page.session.get("user"):
+                page.go("/login")
+                return
+
+            relatorios_view = ft.View(
+                "/relatorios",
+                [TelaRelatorios(page)],
+                bgcolor=ft.Colors.SURFACE
+            )
+            page.views.append(relatorios_view)
 
 
         elif page.route == "/configs":
