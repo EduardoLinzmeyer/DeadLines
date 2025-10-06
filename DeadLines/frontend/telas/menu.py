@@ -168,11 +168,11 @@ class MainMenu(ft.Column):
 
 
     def ir_para_listas(self):
-        pass
+        self.page.go("/listas")
 
 
     def ir_para_relatorios(self):
-        pass
+        self.page.go("/relatorios")
 
 
     def ir_para_configs(self):
