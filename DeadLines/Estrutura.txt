@@ -19,7 +19,7 @@ DeadLines
             │
             ├── telas/
             │       ├── __init__.py                 # Tornar pacotes Python
-            │       ├── agendamentos.py             # Tela principal de submenu de agendamentos
+            │       ├── agendamentos.py             # Tela principal de submenu de Agendamentos
             │       ├── agendamentos_calendario.py  # Submenu de agendamentos.py contendo os agendamentos mensais
             │       ├── agendamentos_clientes.py    # Submenu de agendamentos.py contendo a listagem e o cadastro dos clientes
             │       ├── agendamentos_home.py        # Submenu de agendamentos.py da tela inicial dos agendamentos
@@ -27,8 +27,16 @@ DeadLines
             │       ├── configs.py                  # Tela principal de submenu de Configurações
             │       ├── configs_gerais.py           # Submenu de configs.py contendo as configurações gerais (tema, etc)
             │       ├── controle_usuarios.py        # Submenu de configs.py contendo o controle de usuários (criar/editar/excluir)
+            │       ├── listas.py                   # Tela principal de submenu de Listas
+            │       ├── listas_criar_lista.py       # Submenu de listas.py contendo o cadastro de nova lista
+            │       ├── listas_home.py              # Submenu de listas.py da tela inicial de Listas
+            │       ├── listas_mostrar_listas.py    # Submenu de listas.py contendo a listagem das listas criadas
+            │       ├── listas_produtos.py          # Submenu de listas.py contendo a listagem e o cadastro dos produtos
+            │       ├── listas_servicos.py          # Submenu de listas.py contendo a listagem e o cadastro dos serviços
             │       ├── login.py                    # Login de usuários
             │       ├── menu.py                     # Menu principal
+            │       ├── relatorios.py               # Tela principal de submenu de Relatórios
+            │       ├── relatorios_home.py          # Submenu de relatorios.py da tela inicial de Relatórios
             │       └── splash.py                   # Inicialização animada
             │
             └── utils/
